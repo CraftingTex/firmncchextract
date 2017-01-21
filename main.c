@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
         FILE* f = fopen(sectionPath,"rb");
 
         if(!f){
-            printf("Specified Section not found");
+            printf("Specified Section not found\n");
             exit(EXIT_FAILURE);
         }
 
@@ -63,11 +63,11 @@ int main(int argc, char** argv) {
         free(ncchOffsetList);
         free(section);
 
-        printf("Finished");
+        printf("Finished\n");
 
         exit(EXIT_SUCCESS);
     } else {
-        printf("firmncchextract [firm_section_0]");
+        printf("firmncchextract [firm_section_0]\n");
         exit(EXIT_FAILURE);
     }
 }
